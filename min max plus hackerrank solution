@@ -1,0 +1,5 @@
+n=list(map(int,input().split()))
+n.sort()
+a=n[1:]
+b=n[:-1]
+print(sum(b),sum(a),end='')
