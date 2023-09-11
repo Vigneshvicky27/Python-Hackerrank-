@@ -1,0 +1,14 @@
+a=int(input())
+
+g=[] 
+for i in range(a):
+    n=int(input())
+    g.append(n)
+for j in range(0,len(g)):
+    if g[j]>=38:
+        if (g[j]+1)%5==0:
+            g[j]=g[j]+1
+        elif (g[j]+2)%5==0:
+            g[j]=g[j]+2
+    
+print(*g,sep="\n")
